@@ -1,33 +1,69 @@
 .item{
-    border:1px solid gray;
-    padding:5px;
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+    margin: 10px;
+    float:left;
+    position: relative;
+    border: 1px solid rgb(83, 83, 83);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    
 }
 
-.item>h1{
-       font-size: 12pt;
-    text-align: center;
+.item h1{
+    padding-left: 55px;
+       font-size: 15pt;
+       text-align: center;
+    font-weight: 200;
 }
 
-.item>h2{
-       font-size: 9pt;
+.item h2{
+    margin: 2px;
+    font-size: 7pt;
     font-weight: 400;
 }
 
 .item>img{
+    position: absolute;
+    z-index: 2;
     margin: 0px;
-    width:70px;
-    height: 70px;
-    margin-left: 65px;
-    margin-top: 10px;
+    width:50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.tip , .notip{
+    border-radius: 8px;
+    border: 1px solid gray;  
+    background: black;
+    position:absolute;
+    top: -1px;
+    left:-1px;
+    width: 200px;
+     -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+.tip{
+       opacity: 1;  
+}
+
+.notip{
+        opacity: 0;
+}
+
+.itemHolder{
+       
 }
 
 *{
-    font-family: Segoe UI;   
+    font-family: Segoe UI; 
+    color: white;
 }
+
+
+.topZ{
+  z-index: 100;  
+}
+
