@@ -11,15 +11,16 @@
 
 .item h1{
     padding-left: 55px;
-       font-size: 15pt;
-       text-align: center;
+    font-size: 15pt;
+    text-align: center;
     font-weight: 200;
 }
 
 .item h2{
-    margin: 2px;
+    text-align: center;
+    margin: 8px;
     font-size: 7pt;
-    font-weight: 400;
+    font-weight: 400; 
 }
 
 .item>img{
@@ -32,6 +33,7 @@
 }
 
 .tip , .notip{
+    
     border-radius: 8px;
     border: 1px solid gray;  
     background: black;
